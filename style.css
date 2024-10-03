@@ -1,0 +1,14 @@
+#cima{
+    display: flex;
+}
+#baixo{
+    display: flex;
+}
+#h1Galeria{
+    align-items: center;
+    text-align: center;
+    border: 10px;
+    width: 20%;
+    border-bottom-style:solid ;
+    border-bottom-color:green ;
+}
