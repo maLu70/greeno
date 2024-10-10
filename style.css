@@ -8,19 +8,24 @@ body {
 }
 
 #imgFundoEscura {
-    display: flex;
-    gap: 60%;
-    background-color: green;
+    display: flex; 
+    background-image: url(img/about-bg.jpg);
+}
+
+@media (min-width:1789) {
+    #imgFundoEscuro{
+        width: 100%;
+    }
 }
 
 #cinquenta {
-    margin: 60px;
+    margin: 5%;
     color: white;
     text-align: center;
     justify-content: center;
 }
 
-button {
+#um,#dois,#tres,#more{
     color: black;
     background-color: white;
     border: none;
@@ -35,6 +40,7 @@ button {
     text-align: end;
     justify-content: end;
     color: white;
+    margin: 50%;
 }
 
 #H5 {
