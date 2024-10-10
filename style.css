@@ -1,14 +1,40 @@
+
+
 #cima{
     display: flex;
-}
+    justify-content: space-between;
+    width: 98%;
+    margin: 20px;
+} 
 #baixo{
     display: flex;
+    justify-content: space-between;
+    width: 98%;
+   
 }
 #h1Galeria{
     align-items: center;
     text-align: center;
-    border: 10px;
-    width: 20%;
+    border: 6px;
+    width: 12%;
     border-bottom-style:solid ;
     border-bottom-color:green ;
+}
+#galeria{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 768px){
+    #h1Galeria{
+        width: 30%;
+    }
+    #cima, #baixo{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
 }
