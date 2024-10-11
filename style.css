@@ -6,6 +6,95 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+.header {
+    display: flex;
+    margin-top: 6vh;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.lupa {
+    width: 2vw;
+    background-image: url(img/search_icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.pesquisa {
+    display: flex;
+    font-size: 1.3rem;
+    width: 50vw;
+    justify-content: space-around;
+    color: #222222;
+    font-weight: 500;
+}
+
+.logo {
+    width: 17vw;
+    height: 11vh;
+    background-image: url(img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.paginaInicial {
+    height: 100vh;
+    background-image: url(img/banner.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    justify-content: space-between;
+    margin-top: 2vh;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0.4rem;
+    width: 11vw;
+    height: 6vh;
+    font-size: 1.8rem;
+    margin-top: 5vh;
+}
+
+.btn {
+    width: 23vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    max-width: 42.5vw;
+    margin-top: 10vh;
+}
+
+.info h2 {
+    font-size: 3.9rem;
+    margin: 0;
+}
+
+.info p {
+    font-size: 1.4rem;
+    color: #666666;
+    line-height: 2.3rem;
+    margin: 1vw 2vw 1vw 0;
+}
+
+.container img {
+    margin-top: 3vh;
+    width: 35vw;
+}
+
 .galeria {
     display: flex;
     flex-wrap: wrap;
@@ -15,7 +104,7 @@ body {
 }
 
 .cards {
-    box-shadow: 1px 0 2px 1px rgba(207, 207, 207, 0.705);
+    box-shadow: 0px 0 2px 1px rgba(207, 207, 207, 0.705);
     width: 28vw;
 }
 
