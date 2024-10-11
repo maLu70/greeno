@@ -128,3 +128,86 @@ button {
     margin: 1vw 2vw;
 
 }
+
+
+
+
+
+footer{
+    background-color: #212120;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    margin: 0;
+}
+
+.dentro a{
+    color: white;
+    text-decoration: none;
+}
+
+.imgfooter{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0%;
+    margin: 0;
+}
+
+.imgfooter img{
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
+}
+
+.textFooter{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vh;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7vh;
+}
+
+.Homefooter{
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+    padding-bottom: 15vh;
+}
+
+.dentro{
+
+    width: 40vw;
+    justify-content: space-between;
+    display: flex;
+}
+
+.textFooter p{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1vh;
+}#Addres{
+    border-bottom: #666666 solid;
+    width: 16vw;
+    font-size: 2rem;
+    margin-bottom: 2.5vh;
+}
+
+@media(width >=1500px){
+    
+    #Addres{
+        font-size: 10rem;
+    }.textFooter p{
+        font-size: 4rem;
+    }
+    .dentro a{
+        font-size: 4rem;
+    }
+}@media(width <= 768px){
+    .dentro{
+        flex-wrap: wrap;
+        justify-content: center;
+    }.dentro a{
+        margin-right: 3vw;
+    }
+}
