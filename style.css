@@ -4,9 +4,104 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+#imgFundoEscura{
+    display: flex;
+    gap: 60%;
+    background-color: green;
 }
 
-.header {
+#cinquenta{
+    margin: 60px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+button{
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 5%;
+    font-family: "Poppins", sans-serif;
+    width: 120%;
+    justify-content: center;
+    height: 8%;
+}
+
+#textoCinquenta{
+    font-family: "Poppins", sans-serif;
+    text-align: end;
+    justify-content: end;
+    color: white;
+}
+
+#H5{
+    display: flex;
+    justify-content: end;
+    border-bottom: solid white 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+#more{
+    width: 25%;
+    height: 9%;
+}
+
+.menu {
+    display: none;
+    width: 90vw;
+    height: 6vh;
+    background-color: #308409;
+}
+
+#welcome {
+    color: #308409;
+    margin-bottom: -3vh;
+}
+
+#cima, #baixo{
+    display: flex;
+    justify-content: space-between;
+    width: 95vw;
+} 
+
+.imgMenor {
+    width: 22.5vw;
+}
+
+.imgMaior {
+    width: 47.5vw;
+}
+
+#baixo{
+    display: flex;
+    flex-wrap: wrap;
+    height: 89vh;
+    align-content: space-between;
+    justify-content: center;
+}
+
+#h1Galeria{
+    align-items: center;
+    text-align: center;
+    width: 21vw;
+    font-size: 3.5rem;
+    border-bottom: solid #308409 7px;
+}
+
+#galeria{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
     display: flex;
     margin-top: 6vh;
     text-transform: uppercase;
@@ -41,7 +136,7 @@ body {
 }
 
 .paginaInicial {
-    height: 100vh;
+    height: 110vh;
     background-image: url(img/banner.jpg);
     display: flex;
     flex-direction: column;
@@ -51,9 +146,9 @@ body {
 .container {
     display: flex;
     align-items: center;
-    width: 80vw;
     justify-content: space-between;
     margin-top: 2vh;
+    width: 82vw;
 }
 
 button {
@@ -73,34 +168,53 @@ button {
     justify-content: space-between;
 }
 
+.vitrine h1 {
+    width: 35vw;
+}
+
+.vitrine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vitrine p {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 5vh;
+}
+
 .info {
-    max-width: 42.5vw;
-    margin-top: 10vh;
+    width: 51vw;
+    margin-top: 15vh;
 }
 
 .info h2 {
     font-size: 3.9rem;
     margin: 0;
+    padding: 0;
 }
 
 .info p {
     font-size: 1.4rem;
     color: #666666;
     line-height: 2.3rem;
-    margin: 1vw 2vw 1vw 0;
+    margin: 1vw 0vw 1vw 0;
 }
 
 .container img {
     margin-top: 3vh;
-    width: 35vw;
+    width: 44vw;
 }
 
 .galeria {
     display: flex;
     flex-wrap: wrap;
-    width: 90vw;
+    width: 88vw;
     justify-content: space-between;
     margin-left: 4vw;
+    align-content: space-between;
+    height: 180vh;
 }
 
 .cards {
@@ -126,12 +240,174 @@ button {
     color: #666666;
     line-height: 3.125rem;
     margin: 1vw 2vw;
-
 }
 
+@media (width <= 1789px) {
+    #imgGaleria {
+        height: 67vh;
+    }
 
+    button {
+        width: 13vw;
+    }
 
+    .btn {
+        width: 30vw;
+    }
 
+    .vitrine h1 {
+        width: 50vw;
+    }
+
+    .galeria {
+        height: 180vh;
+    }
+
+    #galeria h1 {
+        width: 30vw;
+    }
+}
+
+@media (width <= 1200px) {
+    html {
+        font-size: 10px;
+    }
+
+    #cima, #baixo {
+        width: 100vw;
+
+    }
+    #imgGaleria {
+        width: 90vw;
+        height: 37vh;
+    }
+
+    .imgMenor {
+        width: 22vw;
+    }
+
+    .imgMaior {
+        width: 42vw;
+    }
+
+    .paginaInicial {
+        height: 95vh;
+    }
+
+    #welcome {
+        width: 40.5vw;
+        margin-bottom: 0.01vh;
+    }
+
+    .galeria {
+        height: 118vh
+    }
+
+    .logo {
+        height: 5vh;
+    }
+}
+
+@media (width <= 800px){ 
+
+    html {
+        font-size: 16px;
+    } 
+}
+@media (max-width: 768px){ 
+
+    #cima, #baixo{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 82%;
+        height: 117vh;
+    }
+
+    #galeria img {
+        width: 90%;
+    }
+
+    #galeria h1 {
+        width: 45vw;
+
+    #h1Galeria{
+        width: 230px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    #imgGaleria {
+        height: 237vh;
+    }
+
+    .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70vw;
+        height: 505vh;
+    }
+
+    .cards {
+        width: 70vw;
+    }
+
+    .vitrine h1 { 
+        text-align: center;
+        width: 80vw;
+    }
+
+    .vitrine #pCards {
+        text-align: center;
+        width: 70vw;
+    }
+
+    .cards img {
+        width: 70vw;
+    }
+
+    .container img {
+        display: none;
+    }
+
+    .info {
+        width: 100vw;
+        margin-top: 9vh;
+    }
+
+    .info h2 {
+        font-size: 3.5rem;
+        width: 80vw;
+    }
+
+    #welcome {
+        width: 80vw;
+    }
+
+    button {
+        width: 30vw;
+    }
+
+    .btn {
+        width: 65vw;
+    }
+
+    .pesquisa {
+        display: none;
+    }
+
+    .logo {
+        width: 80vw;
+        height: 20vh;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .paginaInicial {
+        height: 100vh;
+    }
+}
 
 footer{
     background-color: #212120;
@@ -186,7 +462,8 @@ footer{
     text-align: center;
     margin: 0;
     margin-bottom: 1vh;
-}#Addres{
+}
+  #Addres{
     border-bottom: #666666 solid;
     width: 16vw;
     font-size: 2rem;
@@ -203,7 +480,8 @@ footer{
     .dentro a{
         font-size: 4rem;
     }
-}@media(width <= 768px){
+}
+  @media(width <= 768px){
     .dentro{
         flex-wrap: wrap;
         justify-content: center;
