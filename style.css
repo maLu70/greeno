@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
 #imgFundoEscura{
     display: flex;
     gap: 60%;
@@ -42,37 +50,269 @@ button{
     height: 9%;
 }
 
-#cima{
+.menu {
+    display: none;
+    width: 90vw;
+    height: 6vh;
+    background-color: #308409;
+}
+
+#welcome {
+    color: #308409;
+    margin-bottom: -3vh;
+}
+
+#cima, #baixo{
     display: flex;
     justify-content: space-between;
-    width: 98%;
-    margin: 20px;
+    width: 95vw;
 } 
+
+.imgMenor {
+    width: 22.5vw;
+}
+
+.imgMaior {
+    width: 47.5vw;
+}
 
 #baixo{
     display: flex;
-    justify-content: space-between;
-    width: 98%;
-   
+    flex-wrap: wrap;
+    height: 89vh;
+    align-content: space-between;
+    justify-content: center;
 }
 
 #h1Galeria{
     align-items: center;
     text-align: center;
-    width: 230px;
-    border-bottom: solid #308409 5px;
-    font-family: "Poppins", sans-serif;
+    width: 21vw;
+    font-size: 3.5rem;
+    border-bottom: solid #308409 7px;
 }
 
 #galeria{
     display: flex;
     flex-wrap: wrap;
-    max-width: 100%;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     justify-content: center;
 }
 
+header {
+    display: flex;
+    margin-top: 6vh;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.lupa {
+    width: 2vw;
+    background-image: url(img/search_icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.pesquisa {
+    display: flex;
+    font-size: 1.3rem;
+    width: 50vw;
+    justify-content: space-around;
+    color: #222222;
+    font-weight: 500;
+}
+
+.logo {
+    width: 17vw;
+    height: 11vh;
+    background-image: url(img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.paginaInicial {
+    height: 110vh;
+    background-image: url(img/banner.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2vh;
+    width: 82vw;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0.4rem;
+    width: 11vw;
+    height: 6vh;
+    font-size: 1.8rem;
+    margin-top: 5vh;
+}
+
+.btn {
+    width: 23vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.vitrine h1 {
+    width: 35vw;
+}
+
+.vitrine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vitrine p {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 5vh;
+}
+
+.info {
+    width: 51vw;
+    margin-top: 15vh;
+}
+
+.info h2 {
+    font-size: 3.9rem;
+    margin: 0;
+    padding: 0;
+}
+
+.info p {
+    font-size: 1.4rem;
+    color: #666666;
+    line-height: 2.3rem;
+    margin: 1vw 0vw 1vw 0;
+}
+
+.container img {
+    margin-top: 3vh;
+    width: 44vw;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    width: 88vw;
+    justify-content: space-between;
+    margin-left: 4vw;
+    align-content: space-between;
+    height: 180vh;
+}
+
+.cards {
+    box-shadow: 0px 0 2px 1px rgba(207, 207, 207, 0.705);
+    width: 28vw;
+}
+
+.cards img {
+    width: 28vw;
+}
+
+.cards h2 {
+    font-size: 2.5rem;
+    color: #050303;
+    line-height: 3.125rem;
+    margin: 1vw 2vw;
+
+}
+
+.cards p {
+    font-size: 1.6rem;
+    line-height: 2.25rem;
+    color: #666666;
+    line-height: 3.125rem;
+    margin: 1vw 2vw;
+}
+
+@media (width <= 1789px) {
+    #imgGaleria {
+        height: 67vh;
+    }
+
+    button {
+        width: 13vw;
+    }
+
+    .btn {
+        width: 30vw;
+    }
+
+    .vitrine h1 {
+        width: 50vw;
+    }
+
+    .galeria {
+        height: 180vh;
+    }
+
+    #galeria h1 {
+        width: 30vw;
+    }
+}
+
+@media (width <= 1200px) {
+    html {
+        font-size: 10px;
+    }
+
+    #cima, #baixo {
+        width: 100vw;
+
+    }
+    #imgGaleria {
+        width: 90vw;
+        height: 37vh;
+    }
+
+    .imgMenor {
+        width: 22vw;
+    }
+
+    .imgMaior {
+        width: 42vw;
+    }
+
+    .paginaInicial {
+        height: 95vh;
+    }
+
+    #welcome {
+        width: 40.5vw;
+        margin-bottom: 0.01vh;
+    }
+
+    .galeria {
+        height: 118vh
+    }
+
+    .logo {
+        height: 5vh;
+    }
+}
+
+@media (width <= 800px){ 
+
+    html {
+        font-size: 16px;
+    }
 @media (max-width: 768px){ 
 
     #cima, #baixo{
@@ -80,16 +320,90 @@ button{
         align-items: center;
         text-align: center;
         width: 82%;
-        margin: 7px;
-        height: 83vh;
+        height: 117vh;
     }
 
     #galeria img {
         width: 90%;
     }
 
+    #galeria h1 {
+        width: 45vw;
+
     #h1Galeria{
         width: 230px;
         font-family: "Poppins", sans-serif;
+    }
+
+    #imgGaleria {
+        height: 237vh;
+    }
+
+    .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70vw;
+        height: 505vh;
+    }
+
+    .cards {
+        width: 70vw;
+    }
+
+    .vitrine h1 { 
+        text-align: center;
+        width: 80vw;
+    }
+
+    .vitrine #pCards {
+        text-align: center;
+        width: 70vw;
+    }
+
+    .cards img {
+        width: 70vw;
+    }
+
+    .container img {
+        display: none;
+    }
+
+    .info {
+        width: 100vw;
+        margin-top: 9vh;
+    }
+
+    .info h2 {
+        font-size: 3.5rem;
+        width: 80vw;
+    }
+
+    #welcome {
+        width: 80vw;
+    }
+
+    button {
+        width: 30vw;
+    }
+
+    .btn {
+        width: 65vw;
+    }
+
+    .pesquisa {
+        display: none;
+    }
+
+    .logo {
+        width: 80vw;
+        height: 20vh;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .paginaInicial {
+        height: 100vh;
     }
 }
