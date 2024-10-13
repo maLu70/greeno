@@ -253,6 +253,9 @@ footer {
 .dentro a {
     color: white;
     text-decoration: none;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 1rem;
 }
 
 .imgfooter {
@@ -295,12 +298,13 @@ footer {
     text-align: center;
     margin: 0;
     margin-bottom: 1vh;
+    font-size: 1rem;
 }
 
 #Addres {
     border-bottom: #666666 solid;
-    width: 16vw;
-    font-size: 2rem;
+    width: 15rem;
+    font-size: 3rem;
     margin-bottom: 2.5vh;
 }
 
@@ -468,20 +472,12 @@ footer {
     .paginaInicial {
         height: 100vh;
     }
-
-
-}@media(width >= 1000px){
-    #Addres {
-        font-size: 3rem;
+    .dentro{
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    .textFooter p {
-        font-size: 1.5rem;
-    }
 
-    .dentro a {
-        font-size: 1.5rem;
-    }
 }
 
 #caixadecontato{
@@ -506,42 +502,81 @@ footer {
     width: 60vw;
     background-size: cover;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}#titlecontatus{
+    margin-left: 5vh;
+    padding: 0;
+    margin-bottom: 7vh;
+    border-bottom: solid #308409 7px;
+    width: 21rem;
+    height: 8vh;
+}#titlecontatus h1{
+    font-size: 3.5rem;
 }
 
 .map img{
-    width: 30vw;
+    height: 46vh;
 }
 
 #nome{
     width: 90%;
     height: 15%;
     margin-top: 7%;
-    margin-bottom: 2%;
+    margin-bottom: 2.5%;
+    font-size: 1.5rem;
+    text-indent: 1rem;
+    border: solid #666666 1px;
 }
 
 #email{
     width: 90%;
     height: 15%;
-    margin-bottom: 2%;
+    margin-bottom: 2.5%;
+    font-size: 1.5rem;
+    text-indent: 1rem;
+    border: solid #666666 1px;
 }
-
 #telefone{
     width: 90%;
     height: 15%;
-    margin-bottom: 2%;  
+    margin-bottom: 2.5%;  
+    font-size: 1.5rem;
+    text-indent: 1rem;
+    border: solid #666666 1px;
 }
 
 #mensagem{
     width: 90%;
     height: 20%;
+    font-size: 1.5rem;
+    text-indent: 1rem;
+    line-height: 4rem;
+    border: solid #666666 1px;
     
 }
 
 #caixadecontato div{
     height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-
+.textcontactus{
+    border: white solid 4px;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem
+}
+.textcontactus p{
+    color: white;
+    
+}
 
 .contemap{
     width: 30vw;
@@ -550,29 +585,24 @@ footer {
 
 #lermais{
     background-color: red;
-    border-radius: 10px;
-    height: 10%;
-    width: 60%;
+    border-radius: 22px;
+    height: 13%;
+    width: 40%;
     text-align: center;
     font-size: 2rem;
     color: white;
+    transition: background-color 0.4s ease;
+    box-shadow: none;
+    border: none;
+    
+}
+
+#lermais:hover {
+    background-color: #050303;
+    cursor: pointer; 
 }
 
 
-@media(width >=1500px) {
-
-    #Addres {
-        font-size: 4rem;
-    }
-
-    .textFooter p {
-        font-size: 2rem;
-    }
-
-    .dentro a {
-        font-size: 2rem;
-    }
-}
 
 @media(width <=768px) {
     .dentro {
@@ -580,24 +610,9 @@ footer {
         justify-content: center;
     }
 
-    #Addres{
-        font-size: 1.5rem;
-    }
-    
-    .text-footer p{
-        font-size: 0.75rem;
-    }
 
-    .dentro a{
-        font-size: 0.75rem;
-    }
-
-    .dentro a {
-        margin-right: 3vw;
-    }
-}
 *{
     margin: 0;
     padding: 0;
 }
-
+}
