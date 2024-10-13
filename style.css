@@ -468,21 +468,109 @@ footer {
     .paginaInicial {
         height: 100vh;
     }
+
+
+}@media(width >= 1000px){
+    #Addres {
+        font-size: 3rem;
+    }
+
+    .textFooter p {
+        font-size: 1.5rem;
+    }
+
+    .dentro a {
+        font-size: 1.5rem;
+    }
+}
+
+#caixadecontato{
+    background-color: #308409;
+    display: flex;
+    flex-direction: column;
+    height: 54vh;
+    align-items: center;
+}
+
+
+.contatusus{
+    display: flex;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    height: 100vh;
+}
+
+.fotocontatus{
+    background-image: url(img/contactimg.jpg);
+    height: auto;
+    width: 60vw;
+    background-size: cover;
+    display: flex;
+}
+
+.map img{
+    width: 30vw;
+}
+
+#nome{
+    width: 90%;
+    height: 15%;
+    margin-top: 7%;
+    margin-bottom: 2%;
+}
+
+#email{
+    width: 90%;
+    height: 15%;
+    margin-bottom: 2%;
+}
+
+#telefone{
+    width: 90%;
+    height: 15%;
+    margin-bottom: 2%;  
+}
+
+#mensagem{
+    width: 90%;
+    height: 20%;
+    
+}
+
+#caixadecontato div{
+    height: 70%;
+}
+
+
+
+.contemap{
+    width: 30vw;
+    height: 100vh;
+}
+
+#lermais{
+    background-color: red;
+    border-radius: 10px;
+    height: 10%;
+    width: 60%;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
 }
 
 
 @media(width >=1500px) {
 
     #Addres {
-        font-size: 10rem;
+        font-size: 4rem;
     }
 
     .textFooter p {
-        font-size: 4rem;
+        font-size: 2rem;
     }
 
     .dentro a {
-        font-size: 4rem;
+        font-size: 2rem;
     }
 }
 
@@ -492,7 +580,24 @@ footer {
         justify-content: center;
     }
 
+    #Addres{
+        font-size: 1.5rem;
+    }
+    
+    .text-footer p{
+        font-size: 0.75rem;
+    }
+
+    .dentro a{
+        font-size: 0.75rem;
+    }
+
     .dentro a {
         margin-right: 3vw;
     }
 }
+*{
+    margin: 0;
+    padding: 0;
+}
+
