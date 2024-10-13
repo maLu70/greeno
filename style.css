@@ -6,46 +6,45 @@ body {
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
 }
-#imgFundoEscura{
+
+#imgFundoEscura {
     display: flex;
     gap: 60%;
     background-color: green;
 }
 
-#cinquenta{
+#cinquenta {
     margin: 60px;
     color: white;
     text-align: center;
     justify-content: center;
-    font-family: "Poppins", sans-serif;
 }
 
-button{
+button {
     color: black;
     background-color: white;
     border: none;
     border-radius: 5%;
-    font-family: "Poppins", sans-serif;
     width: 120%;
     justify-content: center;
     height: 8%;
 }
 
-#textoCinquenta{
+#textoCinquenta {
     font-family: "Poppins", sans-serif;
     text-align: end;
     justify-content: end;
     color: white;
 }
 
-#H5{
+#H5 {
     display: flex;
     justify-content: end;
     border-bottom: solid white 5px;
     font-family: "Poppins", sans-serif;
 }
 
-#more{
+#more {
     width: 25%;
     height: 9%;
 }
@@ -62,11 +61,12 @@ button{
     margin-bottom: -3vh;
 }
 
-#cima, #baixo{
+#cima,
+#baixo {
     display: flex;
     justify-content: space-between;
     width: 95vw;
-} 
+}
 
 .imgMenor {
     width: 22.5vw;
@@ -76,15 +76,15 @@ button{
     width: 47.5vw;
 }
 
-#baixo{
+#imgGaleria {
+    height: 89vh;
     display: flex;
     flex-wrap: wrap;
-    height: 89vh;
     align-content: space-between;
     justify-content: center;
 }
 
-#h1Galeria{
+#galeria h1, .vitrine h1 {
     align-items: center;
     text-align: center;
     width: 21vw;
@@ -92,7 +92,7 @@ button{
     border-bottom: solid #308409 7px;
 }
 
-#galeria{
+#galeria {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -242,7 +242,69 @@ button {
     margin: 1vw 2vw;
 }
 
-@media (width <= 1789px) {
+footer {
+    background-color: #212120;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 0;
+}
+
+.dentro a {
+    color: white;
+    text-decoration: none;
+}
+
+.imgfooter {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0%;
+    margin: 0;
+}
+
+.imgfooter img {
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
+}
+
+.textFooter {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vh;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7vh;
+}
+
+.Homefooter {
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+    padding-bottom: 15vh;
+}
+
+.dentro {
+
+    width: 40vw;
+    justify-content: space-between;
+    display: flex;
+}
+
+.textFooter p {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1vh;
+}
+
+#Addres {
+    border-bottom: #666666 solid;
+    width: 16vw;
+    font-size: 2rem;
+    margin-bottom: 2.5vh;
+}
+
+@media (width <=1789px) {
     #imgGaleria {
         height: 67vh;
     }
@@ -268,15 +330,16 @@ button {
     }
 }
 
-@media (width <= 1200px) {
+@media (width <=1200px) {
     html {
         font-size: 10px;
     }
 
-    #cima, #baixo {
+    #cima,
+    #baixo {
         width: 100vw;
-
     }
+
     #imgGaleria {
         width: 90vw;
         height: 37vh;
@@ -308,15 +371,17 @@ button {
     }
 }
 
-@media (width <= 800px){ 
+@media (width <=800px) {
 
     html {
         font-size: 16px;
-    } 
+    }
 }
-@media (max-width: 768px){ 
 
-    #cima, #baixo{
+@media (max-width: 768px) {
+
+    #cima,
+    #baixo {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -330,10 +395,6 @@ button {
 
     #galeria h1 {
         width: 45vw;
-
-    #h1Galeria{
-        width: 230px;
-        font-family: "Poppins", sans-serif;
     }
 
     #imgGaleria {
@@ -351,7 +412,7 @@ button {
         width: 70vw;
     }
 
-    .vitrine h1 { 
+    .vitrine h1 {
         text-align: center;
         width: 80vw;
     }
@@ -409,83 +470,29 @@ button {
     }
 }
 
-footer{
-    background-color: #212120;
-    display: flex;
-    flex-direction: column;
-    color:white;
-    margin: 0;
-}
 
-.dentro a{
-    color: white;
-    text-decoration: none;
-}
+@media(width >=1500px) {
 
-.imgfooter{
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    margin: 0%;
-    margin: 0;
-}
-
-.imgfooter img{
-    margin-right: 0.5vw;
-    margin-left: 0.5vw;
-}
-
-.textFooter{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3vh;
-    justify-content: center;
-    align-items: center;
-    padding-top: 7vh;
-}
-
-.Homefooter{
-    display: flex;
-    justify-content: center;
-    margin-top: 7vh;
-    padding-bottom: 15vh;
-}
-
-.dentro{
-
-    width: 40vw;
-    justify-content: space-between;
-    display: flex;
-}
-
-.textFooter p{
-    text-align: center;
-    margin: 0;
-    margin-bottom: 1vh;
-}
-  #Addres{
-    border-bottom: #666666 solid;
-    width: 16vw;
-    font-size: 2rem;
-    margin-bottom: 2.5vh;
-}
-
-@media(width >=1500px){
-    
-    #Addres{
+    #Addres {
         font-size: 10rem;
-    }.textFooter p{
+    }
+
+    .textFooter p {
         font-size: 4rem;
     }
-    .dentro a{
+
+    .dentro a {
         font-size: 4rem;
     }
 }
-  @media(width <= 768px){
-    .dentro{
+
+@media(width <=768px) {
+    .dentro {
         flex-wrap: wrap;
         justify-content: center;
-    }.dentro a{
+    }
+
+    .dentro a {
         margin-right: 3vw;
     }
 }
