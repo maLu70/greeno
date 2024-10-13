@@ -6,6 +6,49 @@ body {
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
 }
+#imgFundoEscura{
+    display: flex;
+    gap: 60%;
+    background-color: green;
+}
+
+#cinquenta{
+    margin: 60px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+button{
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 5%;
+    font-family: "Poppins", sans-serif;
+    width: 120%;
+    justify-content: center;
+    height: 8%;
+}
+
+#textoCinquenta{
+    font-family: "Poppins", sans-serif;
+    text-align: end;
+    justify-content: end;
+    color: white;
+}
+
+#H5{
+    display: flex;
+    justify-content: end;
+    border-bottom: solid white 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+#more{
+    width: 25%;
+    height: 9%;
+}
 
 .menu {
     display: none;
@@ -33,19 +76,22 @@ body {
     width: 47.5vw;
 }
 
-#imgGaleria {
+#baixo{
     display: flex;
     flex-wrap: wrap;
     height: 89vh;
     align-content: space-between;
     justify-content: center;
 }
-h1 {
+
+#h1Galeria{
+    align-items: center;
     text-align: center;
     width: 21vw;
     font-size: 3.5rem;
     border-bottom: solid #308409 7px;
 }
+
 #galeria{
     display: flex;
     flex-wrap: wrap;
@@ -267,6 +313,7 @@ button {
     html {
         font-size: 16px;
     }
+@media (max-width: 768px){ 
 
     #cima, #baixo{
         flex-direction: column;
@@ -282,6 +329,10 @@ button {
 
     #galeria h1 {
         width: 45vw;
+
+    #h1Galeria{
+        width: 230px;
+        font-family: "Poppins", sans-serif;
     }
 
     #imgGaleria {
