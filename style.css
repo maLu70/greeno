@@ -9,50 +9,79 @@ body {
 
 #imgFundoEscura {
     display: flex; 
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url(img/about-bg.jpg);
+    height: 100vh;
 }
 
-@media (min-width:1789) {
+
     #imgFundoEscuro{
         width: 100%;
     }
+#textoCinquenta{
+    
 }
 
+#cinquenta h1{
+    font-size: 3.5rem;
+}
 #cinquenta {
-    margin: 5%;
+    
+    margin-left: 5%;
     color: white;
     text-align: center;
     justify-content: center;
+    align-content: center;
+    height: 100vh;
+    border: #050303 solid ;
 }
 
-#um,#dois,#tres,#more{
+#um,#dois,#tres{
     color: black;
     background-color: white;
     border: none;
-    border-radius: 5%;
-    width: 120%;
-    justify-content: center;
+    border-radius: 4px;
+    width: 40vw;
     height: 8%;
+    font-size: 3.3rem;
+    transition: background-color 0.4s ease;
+}#more{
+    width: 10vw;
+    text-align: center;
+    
 }
 
-#textoCinquenta {
+#textoCinquenta p{
     font-family: "Poppins", sans-serif;
     text-align: end;
     justify-content: end;
     color: white;
-    margin: 50%;
+    font-size: 2.3rem;
+    border: solid black 1px;
 }
 
 #H5 {
     display: flex;
-    justify-content: end;
-    border-bottom: solid white 5px;
+    border: solid white 5px;
+    font-size: 4rem;
+    width: 50vw;
+    justify-content: flex-end;
+    color: white;
     font-family: "Poppins", sans-serif;
+
+}.textoabout{
+    width: 50vw;
 }
 
+.tracoH5{
+    width: 9.9rem;
+    border-bottom: solid white 5px;
+}
 #more {
     width: 25%;
     height: 9%;
+    margin-left: 70%;
 }
 
 .menu {
@@ -603,9 +632,10 @@ footer {
     
 }
 
-#lermais:hover {
+#lermais:hover, #more:hover, #um:hover, #dois:hover, #tres:hover {
     background-color: #050303;
     cursor: pointer; 
+    color: white;
 }
 
 
