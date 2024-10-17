@@ -22,7 +22,7 @@ body {
 .logo {
     width: 17vw;
     height: 11vh;
-    background-image: url(img_pagina_inicial/logo.png);
+    background-image: url(/img/img_pagina_inicial/logo.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -47,7 +47,7 @@ header {
 
 .lupa {
     width: 2vw;
-    background-image: url(img_pagina_inicial/search_icon.png);
+    background-image: url(/img/img_pagina_inicial/search_icon.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -60,7 +60,7 @@ header {
 
 .paginaInicial {
     height: 110vh;
-    background-image: url(img_pagina_inicial/banner.jpg);
+    background-image: url(/img/img_pagina_inicial/banner.jpg);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -182,7 +182,7 @@ button {
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(img_about_us/about-bg.jpg);
+    background-image: url(/img/img_about_us/about-bg.jpg);
     height: 120vh;
     justify-content: space-evenly;
 }
@@ -322,7 +322,7 @@ button {
 }
 
 .fotocontatus {
-    background-image: url(img_contact_us/contactimg.jpg);
+    background-image: url(/img/img_contact_us/contactimg.jpg);
     height: auto;
     width: 60vw;
     background-size: cover;
@@ -503,11 +503,6 @@ footer {
 }
 
 
-
-
-
-
-
 @media (width >=1789px) {
     
 
@@ -519,6 +514,8 @@ footer {
     .btn {
         width: 30vw;
     }
+
+
 
 
 
