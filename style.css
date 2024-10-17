@@ -7,15 +7,26 @@ body {
     overflow-x: hidden;
 }
 
-#imgFundoEscura {
-    margin-top: 10vh;
+/*HEADER*/
+
+
+.pesquisa {
     display: flex;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(img/about-bg.jpg);
-    height: 120vh;
-    justify-content: space-evenly;
+    font-size: 1.3rem;
+    width: 50vw;
+    justify-content: space-around;
+    color: #222222;
+    font-weight: 500;
 }
+
+.logo {
+    width: 17vw;
+    height: 11vh;
+    background-image: url(img_pagina_inicial/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .acomeco{
     text-decoration: none;
     color: #050303;
@@ -23,6 +34,157 @@ body {
 }.acomeco:hover{    
     cursor: pointer;
     color:#308409;
+}
+
+header {
+    display: flex;
+    margin-top: 6vh;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.lupa {
+    width: 2vw;
+    background-image: url(img_pagina_inicial/search_icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+/*PAGINA INICIAL*/
+
+
+.paginaInicial {
+    height: 110vh;
+    background-image: url(img_pagina_inicial/banner.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2vh;
+    width: 82vw;
+}
+
+.container img {
+    margin-top: 3vh;
+    width: 44vw;
+}
+
+.info {
+    width: 51vw;
+    margin-top: 15vh;
+}
+
+.info h2 {
+    font-size: 3.9rem;
+    margin: 0;
+    padding: 0;
+}
+
+.info p {
+    font-size: 1.4rem;
+    color: #666666;
+    line-height: 2.3rem;
+    margin: 1vw 0vw 1vw 0;
+}
+
+#welcome {
+    color: #308409;
+    margin-bottom: -3vh;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0.4rem;
+    width: 11vw;
+    height: 6vh;
+    font-size: 1.8rem;
+    margin-top: 5vh;
+}
+
+.btn {
+    width: 23vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*CARDS*/
+
+
+.vitrine h1 {
+    width: 35vw;
+}
+
+.vitrine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vitrine p {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 5vh;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    width: 88vw;
+    justify-content: space-between;
+    margin-left: 4vw;
+    align-content: space-between;
+    height: 180vh;
+}
+
+.cards {
+    box-shadow: 0px 0 2px 1px rgba(207, 207, 207, 0.705);
+    width: 28vw;
+}
+
+.cards img {
+    width: 28vw;
+}
+
+.cards h2 {
+    font-size: 2.5rem;
+    color: #050303;
+    line-height: 3.125rem;
+    margin: 1vw 2vw;
+
+}
+
+.cards p {
+    font-size: 1.6rem;
+    line-height: 2.25rem;
+    color: #666666;
+    line-height: 3.125rem;
+    margin: 1vw 2vw;
+}
+
+
+/*ABOUT US*/
+
+
+#imgFundoEscura {
+    margin-top: 10vh;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(img_about_us/about-bg.jpg);
+    height: 120vh;
+    justify-content: space-evenly;
 }
 
 #textoAbout {
@@ -94,16 +256,16 @@ body {
     height: 7vh;
 }
 
-#welcome {
-    color: #308409;
-    margin-bottom: -3vh;
-}
 
-#cima,
-#baixo {
+/*Galeria*/
+
+
+#imgGaleria {
+    height: 89vh;
     display: flex;
-    justify-content: space-between;
-    width: 95vw;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
 }
 
 .imgMenor {
@@ -112,16 +274,6 @@ body {
 
 .imgMaior {
     width: 47.5vw;
-}#welcome{
-    margin-bottom: 1vh;
-}
-
-#imgGaleria {
-    height: 89vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: center;
 }
 
 #galeria h1,
@@ -142,205 +294,9 @@ body {
     justify-content: center;
 }
 
-header {
-    display: flex;
-    margin-top: 6vh;
-    text-transform: uppercase;
-    align-items: center;
-    justify-content: space-around;
-    width: 100vw;
-}
 
-.lupa {
-    width: 2vw;
-    background-image: url(img/search_icon.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
+/*CONTACT US*/
 
-.pesquisa {
-    display: flex;
-    font-size: 1.3rem;
-    width: 50vw;
-    justify-content: space-around;
-    color: #222222;
-    font-weight: 500;
-}
-
-.logo {
-    width: 17vw;
-    height: 11vh;
-    background-image: url(img/logo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.paginaInicial {
-    height: 110vh;
-    background-image: url(img/banner.jpg);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 2vh;
-    width: 82vw;
-}
-
-button {
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 0.4rem;
-    width: 11vw;
-    height: 6vh;
-    font-size: 1.8rem;
-    margin-top: 5vh;
-}
-
-.btn {
-    width: 23vw;
-    display: flex;
-    justify-content: space-between;
-}
-
-.vitrine h1 {
-    width: 35vw;
-}
-
-.vitrine {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.vitrine p {
-    font-size: 1.5rem;
-    margin-top: 0;
-    margin-bottom: 5vh;
-}
-
-.info {
-    width: 51vw;
-    margin-top: 15vh;
-}
-
-.info h2 {
-    font-size: 3.9rem;
-    margin: 0;
-    padding: 0;
-}
-
-.info p {
-    font-size: 1.4rem;
-    color: #666666;
-    line-height: 2.3rem;
-    margin: 1vw 0vw 1vw 0;
-}
-
-.container img {
-    margin-top: 3vh;
-    width: 44vw;
-}
-
-.galeria {
-    display: flex;
-    flex-wrap: wrap;
-    width: 88vw;
-    justify-content: space-between;
-    margin-left: 4vw;
-    align-content: space-between;
-    height: 180vh;
-}
-
-.cards {
-    box-shadow: 0px 0 2px 1px rgba(207, 207, 207, 0.705);
-    width: 28vw;
-}
-
-.cards img {
-    width: 28vw;
-}
-
-.cards h2 {
-    font-size: 2.5rem;
-    color: #050303;
-    line-height: 3.125rem;
-    margin: 1vw 2vw;
-
-}
-
-.cards p {
-    font-size: 1.6rem;
-    line-height: 2.25rem;
-    color: #666666;
-    line-height: 3.125rem;
-    margin: 1vw 2vw;
-}
-
-footer {
-    background-color: #212120;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    margin: 0;
-}
-
-.dentro a {
-    color: white;
-    text-decoration: none;
-    margin-right: 5px;
-    margin-left: 5px;
-    font-size: 1rem;
-}
-
-.imgfooter {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    margin: 0%;
-    margin: 0;
-}
-
-.imgfooter img {
-    margin-right: 0.5vw;
-    margin-left: 0.5vw;
-}
-
-.textFooter {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3vh;
-    justify-content: center;
-    align-items: center;
-    padding-top: 7vh;
-}
-
-.Homefooter {
-    display: flex;
-    justify-content: center;
-    margin-top: 7vh;
-    padding-bottom: 15vh;
-}
-
-.dentro {
-
-    width: 40vw;
-    justify-content: space-between;
-    display: flex;
-}
-
-.textFooter p {
-    text-align: center;
-    margin: 0;
-    margin-bottom: 1vh;
-    font-size: 1rem;
-}
 
 #Addres {
     border-bottom: #666666 solid;
@@ -366,7 +322,7 @@ footer {
 }
 
 .fotocontatus {
-    background-image: url(img/contactimg.jpg);
+    background-image: url(img_contact_us/contactimg.jpg);
     height: auto;
     width: 60vw;
     background-size: cover;
@@ -388,14 +344,6 @@ footer {
     font-size: 3.5rem;
 }
 
-.dentro a:hover {
-    cursor: pointer;
-    color: #308409;
-}
-
-.dentro a {
-    transition: color 0.2s ease;
-}
 
 .map img {
     height: 46vh;
@@ -460,7 +408,6 @@ footer {
 
 .textcontactus p {
     color: white;
-
 }
 
 .contemap {
@@ -481,6 +428,7 @@ footer {
     border: none;
 
 }
+
 #lermais:hover,
 #mais:hover,
 #um:hover {
@@ -489,11 +437,81 @@ footer {
     color: white;
 }
 
-@media (width >=1789px) {
-    #imgGaleria {
-        height: 67vh;
-    }
+/*FOOTER*/
 
+footer {
+    background-color: #212120;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 0;
+}
+
+.navegacao a {
+    transition: color 0.2s ease;
+}
+
+.navegacao a:hover {
+    cursor: pointer;
+    color: #308409;
+}
+
+.textFooter p {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1vh;
+    font-size: 1rem;
+}
+
+
+
+.navegacao a {
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 1rem;
+}
+
+.imgfooter {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0%;
+    margin: 0;
+}
+
+.imgfooter img {
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
+}
+
+.textFooter {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vh;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7vh;
+}
+
+.Homefooter {
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+    padding-bottom: 15vh;
+}
+
+
+
+
+
+
+
+@media (width >=1789px) {
+    
+
+    /*HEADER*/
     button {
         width: 13vw;
     }
@@ -501,6 +519,10 @@ footer {
     .btn {
         width: 30vw;
     }
+
+
+
+    /*CARDS*/
 
     .vitrine h1 {
         width: 50vw;
@@ -510,15 +532,27 @@ footer {
         height: 150vh;
     }
 
+
+
+    /*GALERIA*/
+
+    #imgGaleria {
+        height: 67vh;
+    }
+
     #galeria h1 {
         width: 30vw;
     }
 }
 
 @media(width <=1500px) {
+    
     html {
         font-size: 14px;
     }
+
+    /*CARDS*/
+
     .galeria{
         height: 130vh;
     }
@@ -529,6 +563,27 @@ footer {
     html{
         font-size:14px ;
     }
+
+    /*HEADER*/ 
+
+    .logo {
+        height: 5vh;
+    }
+
+
+    /*PAGINA INICIAL*/
+
+    .paginaInicial {
+        height: 95vh;
+    } 
+    #welcome {
+        width: 40.5vw;
+        margin-bottom: 0.01vh;
+    }
+
+
+    /*GALERIA*/
+
     #cima,
     #baixo {
         width: 100vw;
@@ -547,37 +602,28 @@ footer {
         width: 42vw;
     }
 
-    .paginaInicial {
-        height: 95vh;
-    }
-
-    #welcome {
-        width: 40.5vw;
-        margin-bottom: 0.01vh;
-    }
-
     .galeria {
         height: 160vh
     }
 
-    .logo {
-        height: 5vh;
-    }
-}#lermais{
+    /*CONTACT US*/
+
+    #lermais{
     font-size: 1rem;
 }
 
-#titlecontatus {
+    #titlecontatus {
     margin-top: 15vh;
 
 }
+
+
 
 @media (width <= 768px) {
     #lermais{
         font-size: 2rem;
     }
     .fotocontatus {
-        background-image: url(img/contactimg.jpg);
         height: auto;
         width: 100vw;
         background-size: cover;
@@ -687,7 +733,6 @@ footer {
 
     #mais {
         border-radius: 22px;
-
         width: 50vw;
         padding-top: 3vh;
         text-align: center;
@@ -764,7 +809,7 @@ footer {
         height: 110vh;
     }
 
-    .dentro {
+    .navegacao {
         display: flex;
         flex-wrap: wrap;
     }
@@ -814,4 +859,5 @@ footer {
     #imgGaleria {
         height: 315vw;
     }
+}
 }
