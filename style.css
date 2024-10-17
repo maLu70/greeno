@@ -13,8 +13,16 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(img/about-bg.jpg);
-    height: 100vh;
+    height: 120vh;
     justify-content: space-evenly;
+}
+.acomeco{
+    text-decoration: none;
+    color: #050303;
+    transition: color 0.3s ease;
+}.acomeco:hover{    
+    cursor: pointer;
+    color:#308409;
 }
 
 #textoAbout {
@@ -55,16 +63,17 @@ body {
     transition: background-color 0.4s ease;
 }
 
-#more {
+#mais {
     border: none;
     color: black;
     transition: background-color 0.4s ease;
     border-radius: 5px;
     width: 14vw;
     text-align: center;
-    height: 8vh;
     font-size: 1.5rem;
     margin-top: 1vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 
 #textoCinquenta p {
@@ -103,6 +112,8 @@ body {
 
 .imgMaior {
     width: 47.5vw;
+}#welcome{
+    margin-bottom: 1vh;
 }
 
 #imgGaleria {
@@ -515,6 +526,9 @@ footer {
 
 @media (width <=1200px) {
 
+    html{
+        font-size:14px ;
+    }
     #cima,
     #baixo {
         width: 100vw;
@@ -543,7 +557,7 @@ footer {
     }
 
     .galeria {
-        height: 140vh
+        height: 160vh
     }
 
     .logo {
@@ -779,7 +793,7 @@ footer {
     }
 
     #imgGaleria {
-        height: 315vw;
+        height: 315vh;
     }
 }
 
