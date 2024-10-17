@@ -471,14 +471,14 @@ footer {
 
 }
 #lermais:hover,
-#more:hover,
+#mais:hover,
 #um:hover {
     background-color: #050303;
     cursor: pointer;
     color: white;
 }
 
-@media (width <=1789px) {
+@media (width >=1789px) {
     #imgGaleria {
         height: 67vh;
     }
@@ -496,7 +496,7 @@ footer {
     }
 
     .galeria {
-        height: 180vh;
+        height: 150vh;
     }
 
     #galeria h1 {
@@ -507,6 +507,9 @@ footer {
 @media(width <=1500px) {
     html {
         font-size: 14px;
+    }
+    .galeria{
+        height: 130vh;
     }
 }
 
@@ -540,12 +543,14 @@ footer {
     }
 
     .galeria {
-        height: 118vh
+        height: 140vh
     }
 
     .logo {
         height: 5vh;
     }
+}#lermais{
+    font-size: 1rem;
 }
 
 #titlecontatus {
@@ -554,7 +559,9 @@ footer {
 }
 
 @media (width <= 768px) {
-
+    #lermais{
+        font-size: 2rem;
+    }
     .fotocontatus {
         background-image: url(img/contactimg.jpg);
         height: auto;
@@ -589,6 +596,11 @@ footer {
         width: 100vw;
         margin-right: 2vw;
     }
+    #caixadecontato div {
+        width: 98vw;
+        margin-right: 1vw;
+        margin-left: 1vw;
+    }
 
     #caixadecontato div {
         margin-bottom: 5vh;
@@ -621,15 +633,15 @@ footer {
 
     .galeria {
         display: flex;
-        flex-wrap: wrap;
-        width: 70vw;
-        height: 760vh;
+        flex-direction: column;
+        width: 100vw;
+        height: 390vh;
     }
 
     #imgFundoEscura {
         display: flex;
         flex-direction: column;
-        height: 330vh;
+        height: 420vh;
         align-items: center;
     }
 
@@ -641,10 +653,12 @@ footer {
 
     #cinquenta h1 {
         font-size: 5rem;
+        font-weight: 700;
     }
 
     #textoAbout {
         width: 95vw;
+        height: 80vh;
     }
 
     #textoAbout p {
@@ -657,27 +671,38 @@ footer {
         border-bottom: 1vh solid white;
     }
 
-    #more {
+    #mais {
+        border-radius: 22px;
+
         width: 50vw;
-        font-size: 2.2rem;
+        padding-top: 3vh;
+        text-align: center;
+        padding-bottom: 3vh;
+        text-align: center;
+        font-size:3rem;
+        color: black;
+        transition: background-color 0.4s ease;
+        box-shadow: none;
+        border: none;
     }
 
     .cards {
-        width: 70vw;
+        width: 100vw;
+        
     }
 
     .vitrine h1 {
         text-align: center;
-        width: 60vw;
+        width: 100vw;
     }
 
     .vitrine #pCards {
         text-align: center;
-        width: 70vw;
+        width: 100vw;
     }
 
     .cards img {
-        width: 70vw;
+        width: 100vw;
     }
 
     .container img {
@@ -735,23 +760,17 @@ footer {
     }
 }
 
-@media (width <=750px) {
-    html {
-        font-size: 9px;
-    }
-}
-
 @media(width <= 500px) {
     html {
         font-size: 8px;
     }
 
     .galeria {
-        height: 50vh;
+        height: 450vh;
     }
 
     #imgFundoEscura {
-        height: 250vh;
+        height: 280vh;
     }
 
     #cima, #baixo {
@@ -765,10 +784,6 @@ footer {
 }
 
 @media (width <=300px) {
-    html {
-        font-size: 5px;
-    }
-
     .galeria {
         height: 450vh;
     }
