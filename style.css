@@ -7,184 +7,25 @@ body {
     overflow-x: hidden;
 }
 
-/*HEADER*/
-
-
-.pesquisa {
-    display: flex;
-    font-size: 1.3rem;
-    width: 50vw;
-    justify-content: space-around;
-    color: #222222;
-    font-weight: 500;
-}
-
-.logo {
-    width: 17vw;
-    height: 11vh;
-    background-image: url(/img/img_pagina_inicial/logo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.acomeco{
-    text-decoration: none;
-    color: #050303;
-    transition: color 0.3s ease;
-}.acomeco:hover{    
-    cursor: pointer;
-    color:#308409;
-}
-
-header {
-    display: flex;
-    margin-top: 6vh;
-    text-transform: uppercase;
-    align-items: center;
-    justify-content: space-around;
-    width: 100vw;
-}
-
-.lupa {
-    width: 2vw;
-    background-image: url(/img/img_pagina_inicial/search_icon.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-
-
-/*PAGINA INICIAL*/
-
-
-.paginaInicial {
-    height: 110vh;
-    background-image: url(/img/img_pagina_inicial/banner.jpg);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 2vh;
-    width: 82vw;
-}
-
-.container img {
-    margin-top: 3vh;
-    width: 44vw;
-}
-
-.info {
-    width: 51vw;
-    margin-top: 15vh;
-}
-
-.info h2 {
-    font-size: 3.9rem;
-    margin: 0;
-    padding: 0;
-}
-
-.info p {
-    font-size: 1.4rem;
-    color: #666666;
-    line-height: 2.3rem;
-    margin: 1vw 0vw 1vw 0;
-}
-
-#welcome {
-    color: #308409;
-    margin-bottom: -3vh;
-}
-
-button {
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 0.4rem;
-    width: 11vw;
-    height: 6vh;
-    font-size: 1.8rem;
-    margin-top: 5vh;
-}
-
-.btn {
-    width: 23vw;
-    display: flex;
-    justify-content: space-between;
-}
-
-/*CARDS*/
-
-
-.vitrine h1 {
-    width: 35vw;
-}
-
-.vitrine {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.vitrine p {
-    font-size: 1.5rem;
-    margin-top: 0;
-    margin-bottom: 5vh;
-}
-
-.galeria {
-    display: flex;
-    flex-wrap: wrap;
-    width: 88vw;
-    justify-content: space-between;
-    margin-left: 4vw;
-    align-content: space-between;
-    height: 180vh;
-}
-
-.cards {
-    box-shadow: 0px 0 2px 1px rgba(207, 207, 207, 0.705);
-    width: 28vw;
-}
-
-.cards img {
-    width: 28vw;
-}
-
-.cards h2 {
-    font-size: 2.5rem;
-    color: #050303;
-    line-height: 3.125rem;
-    margin: 1vw 2vw;
-
-}
-
-.cards p {
-    font-size: 1.6rem;
-    line-height: 2.25rem;
-    color: #666666;
-    line-height: 3.125rem;
-    margin: 1vw 2vw;
-}
-
-
-/*ABOUT US*/
-
-
 #imgFundoEscura {
     margin-top: 10vh;
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(/img/img_about_us/about-bg.jpg);
+    background-image: url(img/img_about_us/about-bg.jpg);
     height: 120vh;
     justify-content: space-evenly;
+}
+
+.acomeco {
+    text-decoration: none;
+    color: #050303;
+    transition: color 0.3s ease;
+}
+
+.acomeco:hover {
+    cursor: pointer;
+    color: #308409;
 }
 
 #textoAbout {
@@ -256,16 +97,16 @@ button {
     height: 7vh;
 }
 
+#welcome {
+    color: #308409;
+    margin-bottom: -3vh;
+}
 
-/*Galeria*/
-
-
-#imgGaleria {
-    height: 89vh;
+#cima,
+#baixo {
     display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: center;
+    justify-content: space-between;
+    width: 95vw;
 }
 
 .imgMenor {
@@ -274,6 +115,18 @@ button {
 
 .imgMaior {
     width: 47.5vw;
+}
+
+#welcome {
+    margin-bottom: 1vh;
+}
+
+#imgGaleria {
+    height: 1000vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
 }
 
 #galeria h1,
@@ -294,9 +147,210 @@ button {
     justify-content: center;
 }
 
+header {
+    display: flex;
+    margin-top: 6vh;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+}
 
-/*CONTACT US*/
+.lupa {
+    width: 2vw;
+    background-image: url(img/img_pagina_inicial/search_icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 
+.pesquisa {
+    display: flex;
+    font-size: 1.3rem;
+    width: 50vw;
+    justify-content: space-around;
+    color: #222222;
+    font-weight: 500;
+}
+
+.logo {
+    width: 17vw;
+    height: 11vh;
+    background-image: url(img/img_pagina_inicial/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.paginaInicial {
+    height: 110vh;
+    background-image: url(img/img_pagina_inicial/banner.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2vh;
+    width: 82vw;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0.4rem;
+    width: 11vw;
+    height: 6vh;
+    font-size: 1.8rem;
+    margin-top: 5vh;
+}
+
+.btn {
+    width: 23vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.vitrine h1 {
+    width: 35vw;
+}
+
+.vitrine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.vitrine p {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 5vh;
+}
+
+.info {
+    width: 51vw;
+    margin-top: 15vh;
+}
+
+.info h2 {
+    font-size: 3.9rem;
+    margin: 0;
+    padding: 0;
+}
+
+.info p {
+    font-size: 1.4rem;
+    color: #666666;
+    line-height: 2.3rem;
+    margin: 1vw 0vw 1vw 0;
+}
+
+.container img {
+    margin-top: 3vh;
+    width: 44vw;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    width: 88vw;
+    justify-content: space-between;
+    margin-left: 4vw;
+    align-content: space-between;
+    height: 180vh;
+}
+
+.cards {
+    box-shadow: 0px 0 2px 1px rgba(207, 207, 207, 0.705);
+    width: 28vw;
+}
+
+.cards img {
+    width: 28vw;
+}
+
+.cards h2 {
+    font-size: 2.5rem;
+    color: #050303;
+    line-height: 3.125rem;
+    margin: 1vw 2vw;
+
+}
+
+.cards p {
+    font-size: 1.6rem;
+    line-height: 2.25rem;
+    color: #666666;
+    line-height: 3.125rem;
+    margin: 1vw 2vw;
+}
+
+footer {
+    background-color: #212120;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 0;
+}
+
+.dentro a {
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 1rem;
+}
+
+.imgfooter {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0%;
+    margin: 0;
+}
+
+.imgfooter img {
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
+}
+
+.textFooter {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vh;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7vh;
+}
+
+.Homefooter {
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+    padding-bottom: 15vh;
+}
+
+.dentro {
+
+    width: 40vw;
+    justify-content: space-between;
+    display: flex;
+}
+
+.textFooter p {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1vh;
+    font-size: 1rem;
+}
 
 #Addres {
     border-bottom: #666666 solid;
@@ -316,13 +370,13 @@ button {
 
 .contatusus {
     display: flex;
-    margin-left: 3vw;
-    margin-right: 3vw;
+    justify-content: center;
+
     height: 100vh;
 }
 
 .fotocontatus {
-    background-image: url(/img/img_contact_us/contactimg.jpg);
+    background-image: url(img/img_contact_us/contactimg.jpg);
     height: auto;
     width: 60vw;
     background-size: cover;
@@ -344,6 +398,14 @@ button {
     font-size: 3.5rem;
 }
 
+.dentro a:hover {
+    cursor: pointer;
+    color: #308409;
+}
+
+.dentro a {
+    transition: color 0.2s ease;
+}
 
 .map img {
     height: 46vh;
@@ -408,6 +470,7 @@ button {
 
 .textcontactus p {
     color: white;
+
 }
 
 .contemap {
@@ -426,7 +489,6 @@ button {
     transition: background-color 0.4s ease;
     box-shadow: none;
     border: none;
-
 }
 
 #lermais:hover,
@@ -437,76 +499,11 @@ button {
     color: white;
 }
 
-/*FOOTER*/
-
-footer {
-    background-color: #212120;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    margin: 0;
-}
-
-.navegacao a {
-    transition: color 0.2s ease;
-}
-
-.navegacao a:hover {
-    cursor: pointer;
-    color: #308409;
-}
-
-.textFooter p {
-    text-align: center;
-    margin: 0;
-    margin-bottom: 1vh;
-    font-size: 1rem;
-}
-
-
-
-.navegacao a {
-    color: white;
-    text-decoration: none;
-    margin-right: 5px;
-    margin-left: 5px;
-    font-size: 1rem;
-}
-
-.imgfooter {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    margin: 0%;
-    margin: 0;
-}
-
-.imgfooter img {
-    margin-right: 0.5vw;
-    margin-left: 0.5vw;
-}
-
-.textFooter {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3vh;
-    justify-content: center;
-    align-items: center;
-    padding-top: 7vh;
-}
-
-.Homefooter {
-    display: flex;
-    justify-content: center;
-    margin-top: 7vh;
-    padding-bottom: 15vh;
-}
-
-
 @media (width >=1789px) {
-    
+    #imgGaleria {
+        height: 67vh;
+    }
 
-    /*HEADER*/
     button {
         width: 13vw;
     }
@@ -515,71 +512,56 @@ footer {
         width: 30vw;
     }
 
-
-
-
-
-    /*CARDS*/
-
     .vitrine h1 {
         width: 50vw;
     }
 
     .galeria {
-        height: 150vh;
-    }
-
-
-
-    /*GALERIA*/
-
-    #imgGaleria {
-        height: 67vh;
+        height: 170vh;
     }
 
     #galeria h1 {
         width: 30vw;
     }
+
+    #imgFundoEscura {
+        height: 90vh;
+    }
+
+    #imgGaleria {
+        height: 84vh;
+    }
 }
 
 @media(width <=1500px) {
-    
     html {
         font-size: 14px;
     }
 
-    /*CARDS*/
+    .galeria {
+        height: 160vh;
+    }
 
-    .galeria{
-        height: 130vh;
+    #imgGaleria {
+        height:71vh;
+    }
+
+    #imgFundoEscura {
+        height: 100vh;
+    }
+}
+
+@media (width <=1400px) {
+    #imgGaleria {
+        height:67vh;
     }
 }
 
 @media (width <=1200px) {
 
-    html{
-        font-size:14px ;
+    html {
+        font-size: 14px;
     }
-
-    /*HEADER*/ 
-
-    .logo {
-        height: 5vh;
-    }
-
-
-    /*PAGINA INICIAL*/
-
-    .paginaInicial {
-        height: 95vh;
-    } 
-    #welcome {
-        width: 40.5vw;
-        margin-bottom: 0.01vh;
-    }
-
-
-    /*GALERIA*/
 
     #cima,
     #baixo {
@@ -588,7 +570,7 @@ footer {
 
     #imgGaleria {
         width: 90vw;
-        height: 37vh;
+        height: 55vh;
     }
 
     .imgMenor {
@@ -599,31 +581,101 @@ footer {
         width: 42vw;
     }
 
+    .paginaInicial {
+        height: 95vh;
+    }
+
+    #welcome {
+        width: 40.5vw;
+        margin-bottom: 0.01vh;
+    }
+
     .galeria {
         height: 160vh
     }
 
-    /*CONTACT US*/
+    .logo {
+        height: 5vh;
+    }
 
-    #lermais{
-    font-size: 1rem;
-}
+    #lermais {
+        font-size: 1rem;
+    }
 
     #titlecontatus {
-    margin-top: 15vh;
+        margin-top: 15vh;
+    }
+
+    .contatusus {
+        width: 100vw;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #imgFundoEscura {
+        height: 100vh;
+    }
+
+    .btn {
+        width: 35vw;
+    }
+
+    .btn button {
+        width: 15vw;
+    }
 
 }
 
+@media  (width <= 1060px) {
 
+    #welcome {
+        width: 45vw;
+    }
 
-@media (width <= 768px) {
-    #lermais{
+    .galeria {
+        height: 170vh;
+    }
+
+    #imgFundoEscura {
+        height: 110vh;
+    }
+
+    #imgGaleria {
+        height: 49vh;
+    }
+
+}
+
+@media (width <= 1000px) {
+    .paginaInicial {
+        height: 110vh;
+    }
+
+    .galeria {
+        height: 175vh;
+    }
+
+    #imgFundoEscura {
+        height: 120vh;
+    }
+
+    #imgGaleria {
+        height: 46vh;
+    }
+    
+}
+
+@media (width <= 786px) {
+
+    #lermais {
         font-size: 2rem;
     }
+
     .fotocontatus {
         height: auto;
         width: 100vw;
-        background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -653,6 +705,7 @@ footer {
         width: 100vw;
         margin-right: 2vw;
     }
+
     #caixadecontato div {
         width: 98vw;
         margin-right: 1vw;
@@ -672,8 +725,8 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        width: 82%;
-        height: 205vh;
+        width: 80vw;
+        height: 145vh;
     }
 
     #galeria img {
@@ -685,21 +738,29 @@ footer {
     }
 
     #imgGaleria {
-        height: 412vh;
+        height: 292vh;
     }
 
-    .galeria {
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-        height: 390vh;
+    .contactus, .contemap, #caixadecontato, .map, .fotocontatus {
+        width: 90vw;
     }
 
+    
     #imgFundoEscura {
         display: flex;
         flex-direction: column;
-        height: 420vh;
+        height: 260vh;
         align-items: center;
+        justify-content: flex-start;
+    }
+
+    .galeria {
+        height: 500vh;
+        justify-content: center;
+    }
+
+    .cards, .cards img  {
+        width: 80vw;
     }
 
     #um {
@@ -730,35 +791,17 @@ footer {
 
     #mais {
         border-radius: 22px;
+
         width: 50vw;
         padding-top: 3vh;
         text-align: center;
         padding-bottom: 3vh;
         text-align: center;
-        font-size:3rem;
+        font-size: 3rem;
         color: black;
         transition: background-color 0.4s ease;
         box-shadow: none;
         border: none;
-    }
-
-    .cards {
-        width: 100vw;
-        
-    }
-
-    .vitrine h1 {
-        text-align: center;
-        width: 100vw;
-    }
-
-    .vitrine #pCards {
-        text-align: center;
-        width: 100vw;
-    }
-
-    .cards img {
-        width: 100vw;
     }
 
     .container img {
@@ -783,6 +826,10 @@ footer {
         width: 30vw;
     }
 
+    .btn button {
+        width: 30vw;
+    }
+
     .btn {
         width: 65vw;
     }
@@ -796,17 +843,40 @@ footer {
         height: 20vh;
     }
 
-    .menu {
+    #menu {
         width: 90vw;
-        height: 6vh;
+        height: 5vh;
         background-color: #308409;
+    }
+
+    ul {
+        margin: 0;
+        list-style: none;
+        height: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: self-end;
+        width: 80vw;
+
+    }
+
+    li {
+        width: 5vw;
+        height: 0.5vh;
+        background-color: white;
     }
 
     .paginaInicial {
         height: 110vh;
     }
 
-    .navegacao {
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .dentro {
         display: flex;
         flex-wrap: wrap;
     }
@@ -814,11 +884,24 @@ footer {
     #titlecontatus {
         margin-top: 20vh;
     }
+
+    #nome, #email, #mensagem, #telefone{
+        width: 80vw;
+    }
 }
 
-@media(width <= 500px) {
+@media(width <=600px) {
+    #imgFundoEscura {
+        height: 320vh;
+    }
+    .vitrine h1 {
+        width: 50vw;
+    }
+}
+
+@media(width <=500px) {
     html {
-        font-size: 8px;
+        font-size: 13px;
     }
 
     .galeria {
@@ -826,17 +909,20 @@ footer {
     }
 
     #imgFundoEscura {
-        height: 280vh;
+        height: 300vh;
     }
 
-    #cima, #baixo {
-        height: 140vh;
+    #cima,
+    #baixo {
+        height: 85vh;
         width: 75vw;
     }
 
     #imgGaleria {
-        height: 315vh;
+        height: 171vh;
     }
+
+    
 }
 
 @media (width <=300px) {
@@ -848,7 +934,8 @@ footer {
         height: 250vh;
     }
 
-    #cima, #baixo {
+    #cima,
+    #baixo {
         height: 140vh;
         width: 75vw;
     }
@@ -857,4 +944,20 @@ footer {
         height: 315vw;
     }
 }
+
+@media (width <= 560px) {
+
+    #imgFundoEscura {
+        height: 300vh;
+    }
+
+    #cima,
+    #baixo {
+        height: 100vh;
+        width: 75vw;
+    }
+
+    #imgGaleria {
+        height: 315vw;
+    }
 }
