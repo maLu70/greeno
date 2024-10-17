@@ -122,7 +122,7 @@ body {
 }
 
 #imgGaleria {
-    height: 1000vh;
+    height: 69vh;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
@@ -529,7 +529,7 @@ footer {
     }
 
     #imgGaleria {
-        height: 84vh;
+        height: 87vh;
     }
 }
 
